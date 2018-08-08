@@ -2,10 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ProductpageComponent } from './productpage/productpage.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductpageComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule

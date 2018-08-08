@@ -1,9 +1,9 @@
-/*#market {
-  display: none;
+ #market {
+   display:none;
   text-align: center;
   padding: 20px;
 }
-*/
+
 table {
   border:1px solid black;
   width: 100%;
