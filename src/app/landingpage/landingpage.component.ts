@@ -12,12 +12,5 @@ export class LandingpageComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickSearchLP () {     /*making the landing page disappear when search button is clicked*/
-    var x = document.getElementById("landing-page");
-      x.style.display = "none";
-
-    var y = document.getElementById("market");
-      y.style.display = "block";
-      }
 
 }
