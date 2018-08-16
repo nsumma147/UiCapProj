@@ -5,7 +5,7 @@
 
   <div style ="text-align:center">  <!-- placeholder for landing page component-->
     <input type='text' placeholder="Search">
-    <button type="submit" class= "btn btn-primary" (click)= "onClickSearchLP()"> Search </button>
+    <button type="submit"><a [routerLink]="['/productpage']"> Search </a></button>
     <p> {{ clickSearch }} </p>
   </div>
 </section>

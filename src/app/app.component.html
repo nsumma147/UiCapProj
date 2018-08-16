@@ -2,30 +2,26 @@
 <div id="main-header"style="text-align:center">
 
   <div id="user-header" style="text-align:right">
-    <button type="submit"> Sign Up </button>
-    <button type="submit"> Log in </button>
+    <button type="submit"><a [routerLink]="['/loginpage']">Sign Up</a></button>
+    <button type="submit"><a [routerLink]="['/loginpage']">Log in</a></button>
   </div>
 
 
   <div id="account-header" style="text-align:left">
     <img width="100" height="100" alt="Account Photo" src="https://i.pinimg.com/736x/c2/32/97/c2329780b8c91806de4448826c549161--face-template-head-silhouette-human.jpg">
-    <button type="submit"> Account Info </button>
+    <button type="submit"><a [routerLink]="['/accountpage']"> Account Info </a></button>
   </div>
 
-  <h1 id="title-header"> {{ title }} </h1>
+  <h1 id="title-header"><a [routerLink]="['/']"> {{ title }} </a></h1>
 
   <div id="search-header" style="text-align:right">
     <input type='text' placeholder="Search">
-    <button type="submit" class="btn btn-primary"> Search </button>
+    <button type="submit"><a [routerLink]="['/productpage']"> Search </a></button>
   </div>
 
   <hr id="title-line">
 
 </div>
-
-<!-- <app-landingpage></app-landingpage>
-
-<app-productpage></app-productpage> -->
 
 <div>
   <router-outlet></router-outlet>
