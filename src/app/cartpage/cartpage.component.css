@@ -1,0 +1,29 @@
+.table {
+  border-collapse: separate;
+  table-layout: auto;
+  width: 70%;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+tr {
+  height: 100px;
+
+}
+
+#total-table {
+  table-layout: auto;
+  width: 20%;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  height: 10px;
+}
+
+button {
+  text-align: center;
+  margin-left: 48%;
+  margin-right: 52%;
+
+}

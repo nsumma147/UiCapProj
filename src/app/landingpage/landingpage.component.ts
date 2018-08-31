@@ -6,11 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landingpage.component.css']
 })
 export class LandingpageComponent implements OnInit {
+    searchItem = '';
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSearch(event: Event) {
+      this.searchItem = (<HTMLInputElement>event.target).value;
+    }
 
 }

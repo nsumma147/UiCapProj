@@ -1,24 +1,47 @@
 <!--main header that should be at the top all the time-->
-<div id="main-header"style="text-align:center">
+<html id="html">
+<body id="main-body">
+<div id="main-header">
 
-  <div id="user-header" style="text-align:right">
+  <div class="container">
+
+ <div id="first-row-header" class="row">
+
+  <div id="cart-header" class="col-xs-2" >
+      <img id="cart-picture" src="https://st2.depositphotos.com/4335005/8479/v/950/depositphotos_84798448-stock-illustration-outline-icon-of-shopping-cart.jpg"/>
+      <button id="cart-button" type="submit"><a [routerLink]="['/cartpage']"> Cart</a> </button>
+  </div>
+
+  <div class="col-xs-8">
+
+  </div>
+
+  <div id="user-header" class="col-xs-2">
     <button type="submit"><a [routerLink]="['/loginpage']">Sign Up</a></button>
     <button type="submit"><a [routerLink]="['/loginpage']">Log in</a></button>
   </div>
 
+ </div>
 
-  <div id="account-header" style="text-align:left">
-    <img width="100" height="100" alt="Account Photo" src="https://i.pinimg.com/736x/c2/32/97/c2329780b8c91806de4448826c549161--face-template-head-silhouette-human.jpg">
-    <button type="submit"><a [routerLink]="['/accountpage']"> Account Info </a></button>
+
+  <div id="second-row-header" class="row">
+
+  <div id="account-header" style="text-align:left" class="col-xs-3">
+  <a [routerLink]="['/accountpage']"><img id="account-picture" src='https://lh3.googleusercontent.com/HyCy89ARhzK95vOZJbKG9U8WM0JQoad4VprUCoIvVeTXokbqT3Ld6MhbkklamVV__4LXgV0eWXsov9bNwVAgcYtNHt5rayHTE01QE1MKoL-xohvltnt1SKMGShB2r8v9J7cKTe94uQ=w2400' /></a>
+    <button id="account-button" type="submit"><a [routerLink]="['/accountpage']" class="col-xs-4"> Account Info </a></button>
   </div>
 
-  <h1 id="title-header"><a [routerLink]="['/']"> {{ title }} </a></h1>
+  <h1 id="title-header"><a [routerLink]="['/']" class="col-xs-6"> {{ title }} </a></h1>
 
-  <div id="search-header" style="text-align:right">
+  <div id="search-header" class="col-xs-3">
     <input type='text' placeholder="Search">
     <button type="submit"><a [routerLink]="['/productpage']"> Search </a></button>
   </div>
 
+</div>
+
+
+</div>
   <hr id="title-line">
 
 </div>
@@ -26,3 +49,5 @@
 <div>
   <router-outlet></router-outlet>
 </div>
+</body>
+</html>

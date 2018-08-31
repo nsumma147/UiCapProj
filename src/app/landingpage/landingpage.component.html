@@ -4,8 +4,12 @@
   </div>
 
   <div style ="text-align:center">  <!-- placeholder for landing page component-->
-    <input type='text' placeholder="Search">
+    <input id ="search-input"
+           type='text'
+           placeholder="Search"
+           class="form-control"
+           (input)="onSearch($event)">
     <button type="submit"><a [routerLink]="['/productpage']"> Search </a></button>
-    <p> {{ clickSearch }} </p>
+    <p> You are searching for: {{ searchItem }} </p>
   </div>
 </section>

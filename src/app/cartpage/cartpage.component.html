@@ -1,3 +1,51 @@
-<p>
-  cartpage works!
-</p>
+<table id = "cart-table" class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col"> Item #</th>
+      <th scope="col">Item Description</th>
+      <th scope="col">Item Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Item 1</td>
+      <td>$1.00</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Item 2</td>
+      <td>$2.00</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Item 3</td>
+      <td>$3.00</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Item 4</td>
+      <td>$4.00</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Item 5</td>
+      <td>$5.00</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Item 6</td>
+      <td>$6.00</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="total-table" class="table table-bordered">
+  <thead>
+    <tr scope="col"> Total </tr>
+  </thead>
+  <tbody>
+    <tr>$21.00<tr>
+  </tbody>
+</table>
+<button class="btn btn-danger btn-lg"><a [routerLink]="['/checkoutpage']">Buy</a></button>

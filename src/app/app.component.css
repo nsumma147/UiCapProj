@@ -1,0 +1,55 @@
+#title-header {
+  font-family: fantasy;
+  font-size: 100px;
+  text-align: center;
+}
+
+#main-header {
+  background-color: #212F3D;
+}
+
+#main-body {
+background-color: #B0BEC5;
+}
+
+#account-header {
+    margin-top: 10px;
+}
+
+#cart-button {
+
+}
+
+#cart-header {
+  float: left;
+}
+
+#user-header {
+
+}
+
+#cart-picture {
+    width: 50px;
+    height: 50px;
+}
+
+#html {
+  background-color: #EAF0F2;
+}
+
+#account-picture {
+     height: 75px;
+     width: 75px;
+
+
+}
+
+#account-button {
+  width:100px;
+  text-align: center;
+
+}
+
+#search-header {
+  float: right;
+}

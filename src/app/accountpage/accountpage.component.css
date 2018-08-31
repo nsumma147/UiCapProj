@@ -1,0 +1,14 @@
+#account-tabs {
+  background-color: inherit;
+}
+
+#account-tabs-info {
+  background-color: inherit;
+}
+
+.table {
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 100px;
+  border: 1px solid black;
+}
