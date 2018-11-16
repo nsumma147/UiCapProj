@@ -6,9 +6,8 @@
   <div style ="text-align:center">  <!-- placeholder for landing page component-->
     <input id ="search-input"
            type='text'
-           placeholder="Search"
            class="form-control"
-           (input)="onSearch($event)">
+           [(ngModel)]="searchItem">
     <button type="submit"><a [routerLink]="['/productpage']"> Search </a></button>
     <p> You are searching for: {{ searchItem }} </p>
   </div>
