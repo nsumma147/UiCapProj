@@ -4,12 +4,12 @@
     <div id="account-tabs"class="col-xs-3">
       <table class="table table-bordered">
         <thead>
-          <tr> <button type="button" class="btn btn-primary btn-lg">Account Info</button> </tr>
+          <tr> <button type="button" class="btn btn-primary btn-lg" [disabled]="!enableButton">Account Info</button> </tr>
         </thead>
         <tbody>
-          <tr> <button type="button" class="btn btn-secondary btn-lg"> Buying History </button> </tr>
-          <tr> <button type="button" class="btn btn-success btn-lg">Selling History</button></tr>
-          <tr> <button type="button" class="btn btn-info btn-lg">Recently Viewed</button> </tr>
+          <tr> <button type="button" class="btn btn-secondary btn-lg" [disabled]="!enableButton"> Buying History </button> </tr>
+          <tr> <button type="button" class="btn btn-success btn-lg" [disabled]="!enableButton">Selling History</button></tr>
+          <tr> <button type="button" class="btn btn-info btn-lg" [disabled]="!enableButton">Recently Viewed</button> </tr>
         </tbody>
       </table>
     </div>
