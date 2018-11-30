@@ -4,6 +4,7 @@
       <th scope="col"> Item #</th>
       <th scope="col">Item Description</th>
       <th scope="col">Item Cost</th>
+      <th scope="col">Remove item</th>
     </tr>
   </thead>
   <tbody>
@@ -11,31 +12,43 @@
       <th scope="row">1</th>
       <td>Item 1</td>
       <td>$1.00</td>
+      <td>
+        <button class="btn btn-danger" (click)="onRemoveItem()">Remove</button>
+        <p>{{ removeItemStatus }}</p>
+      </td>
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>Item 2</td>
       <td>$2.00</td>
+      <td>
+        <button class="btn btn-danger">Remove</button>
+      </td>
+
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>Item 3</td>
       <td>$3.00</td>
+      <td><button class="btn btn-danger"> Remove </button></td>
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>Item 4</td>
       <td>$4.00</td>
+      <td><button class="btn btn-danger"> Remove </button></td>
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>Item 5</td>
       <td>$5.00</td>
+      <td><button class="btn btn-danger"> Remove </button></td>
     </tr>
     <tr>
       <th scope="row">6</th>
       <td>Item 6</td>
       <td>$6.00</td>
+      <td><button class="btn btn-danger"> Remove </button></td>
     </tr>
   </tbody>
 </table>
@@ -48,4 +61,4 @@
     <tr>$21.00<tr>
   </tbody>
 </table>
-<button class="btn btn-danger btn-lg"><a [routerLink]="['/checkoutpage']">Buy</a></button>
+<button id="buyButton" class="btn btn-danger btn-lg"><a [routerLink]="['/checkoutpage']">Buy</a></button>

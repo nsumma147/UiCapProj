@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cartpage.component.css']
 })
 export class CartpageComponent implements OnInit {
+  removeItemStatus = "";
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onRemoveItem() {
+    this.removeItemStatus = "Item removed.";
+  }
 }
