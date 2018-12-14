@@ -5,18 +5,30 @@
       Sign Up
       <form class="logforms" id="sign-up-form">
         First name: <br>
-        <input type="text" name ="first-name"><br>
+        <input
+        type="text"
+        name ="first-name"
+        [(ngModel)]="firstName"><br>
         Last name: <br>
-        <input type="text" name ="last-name"><br>
+        <input type="text"
+        name ="last-name"
+        [(ngModel)]="lastName"><br>
         Email: <br>
-        <input type="text" name ="email"><br>
+        <input type="text"
+        name ="email"
+        [(ngModel)]="email"><br>
         User Name: <br>
-        <input type="text" name ="user-name"><br>
+        <input type="text"
+        name ="user-name"
+        [(ngModel)]="userName"><br>
         Password: <br>
         <input type="text" name ="password"><br>
         Retype Password: <br>
         <input type="text" name ="password-check"><br>
         <input id="sign-up-submit" type="submit" value="Submit">
+        <p> Your name is : {{ firstName }} {{lastName}} </p>
+        <p> Email : {{ email }} </p>
+        <p> Username: {{ userName }} </p>
       </form>
     </div>
 

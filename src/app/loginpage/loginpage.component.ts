@@ -6,10 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loginpage.component.css']
 })
 export class LoginpageComponent implements OnInit {
+firstName = '';
+lastName = '';
+email = '';
+userName = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onUpdateFirstName(event: Event) {
+    this.firstName = (<HTMLInputElement>event.target).value;
+  }
+
+  onUpdateLastName(event: Event) {
+    this.lastName = (<HTMLInputElement>event.target).value;
+  }
+
+  onUpdateEmail(event: Event) {
+    this.email = (<HTMLInputElement>event.target).value;
+  }
+
+  onUpdateUserName(event: Event) {
+    this.userName = (<HTMLInputElement>event.target).value;
   }
 
 }
