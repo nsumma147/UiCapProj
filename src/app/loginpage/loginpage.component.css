@@ -11,3 +11,26 @@ text-align: center;
 height: 500px;
 border: 1px solid dodgerblue;
 }
+
+.logforms {
+  background-color: #B0BEC5;
+  height: 90%;
+}
+
+#sign-up-form {
+
+}
+
+#sign-in-form {
+
+}
+
+
+#sign-up-submit {
+ width: 50%;
+}
+
+input {
+  width: 80%;
+  padding: 5px;
+}
