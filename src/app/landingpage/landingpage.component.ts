@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingpageComponent implements OnInit {
     searchItem = '';
+    searchButton = false;
 
-
-  constructor() { }
-
+  constructor() {
+      setTimeout(() => {
+        this.searchButton = true;
+      }, 2000);
+    }
+    
   ngOnInit() {
   }
 
