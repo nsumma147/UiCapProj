@@ -8,7 +8,7 @@
            type='text'
            class="form-control"
            [(ngModel)]="searchItem">
-    <button type="submit" [disabled]="!searchButton"><a [routerLink]="['/productpage']"> Search </a></button>
+    <button type="submit" class= "btn btn-lg"[disabled]="!searchButton"><a [routerLink]="['/productpage']"> Search </a></button>
     <p> You are searching for: {{ searchItem }} </p>
   </div>
 </section>
