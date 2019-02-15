@@ -16,6 +16,7 @@ userName = '';
   ngOnInit() {
   }
 
+/* these will display the user input for the fields on the login page*/
   onUpdateFirstName(event: Event) {
     this.firstName = (<HTMLInputElement>event.target).value;
   }

@@ -14,12 +14,12 @@ export class LandingpageComponent implements OnInit {
         this.searchButton = true;
       }, 2000);
     }
-    
+
   ngOnInit() {
   }
 
   onSearch(event: Event) {
-      this.searchItem = (<HTMLInputElement>event.target).value;
+      this.searchItem = (<HTMLInputElement>event.target).value;  /* binding to the what the user is inputing in the search bar*/
     }
 
 }

@@ -14,6 +14,6 @@ export class CartpageComponent implements OnInit {
   }
 
   onRemoveItem() {
-    this.removeItemStatus = "Item removed.";
+    this.removeItemStatus = "Item removed."; /* displays item was removed when button clicked on cartpage*/
   }
 }
