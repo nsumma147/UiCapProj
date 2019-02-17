@@ -10,6 +10,7 @@ firstName = '';
 lastName = '';
 email = '';
 userName = '';
+userName2 = '';
 
   constructor() { }
 
@@ -31,6 +32,10 @@ userName = '';
 
   onUpdateUserName(event: Event) {
     this.userName = (<HTMLInputElement>event.target).value;
+  }
+
+  onUpdateUserName2(event: Event) {
+    this.userName2 = (<HTMLInputElement>event.target).value;
   }
 
 }

@@ -31,10 +31,10 @@
 
         Retype Password: <br>
         <input type="text" name ="password-check"><br>
-        <input id="sign-up-submit" type="submit" value="Submit">
+        <input id="sign-up-submit" type="submit" value="Submit" [routerLink]="['/accountpage']">
         <p> Your name is : {{ firstName }} {{lastName}} </p>
         <p> Email : {{ email }} </p>
-        <p> Username: {{ userName }} </p>
+        <p> User name: {{ userName }} </p>
       </form>
     </div>
 
@@ -46,14 +46,18 @@
       <form class="logforms" id="sign-in-form">
 
         User Name: <br>
-        <input type="text" name ="user-name"><br>
+        <input
+        type="text"
+        name ="user-name-2"
+        [(ngModel)]="userName2"><br>
 
         Password: <br>
         <input type="text" name ="password"><br>
 
         Retype Password: <br>
         <input type="text" name ="password-check"><br>
-        <input id="sign-up-submit" type="submit" value="Submit">
+        <input id="sign-up-submit" type="submit" value="Submit" [routerLink]="['/accountpage']">
+        <p> Your user name is: {{ userName2 }} </p>
       </form>
     </div>
 
