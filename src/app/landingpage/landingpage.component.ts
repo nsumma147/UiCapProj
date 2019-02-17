@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class LandingpageComponent implements OnInit {
     searchItem = '';
     searchButton = false;
+    searchInput = false;
 
   constructor() {
       setTimeout(() => {
-        this.searchButton = true;
+        this.searchButton = true; /* after 2 seconds the search button will be enabled*/
+        this.searchInput = true;  /* after 2 seconds the input value will show*/
       }, 2000);
     }
 

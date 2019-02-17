@@ -9,6 +9,6 @@
            class="form-control"
            [(ngModel)]="searchItem">
     <button type="submit" class= "btn btn-lg"[disabled]="!searchButton"><a [routerLink]="['/productpage']"> Search </a></button>
-    <p> You are searching for: {{ searchItem }} </p> <!-- interpolating what the user is typing through typescript page-->
+    <p *ngIf = "searchInput"> You are searching for: {{ searchItem }} </p> <!-- interpolating what the user is typing through typescript page-->
   </div>
 </section>
