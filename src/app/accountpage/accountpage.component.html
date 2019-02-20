@@ -7,7 +7,7 @@
           <tr> <button type="button" class="btn btn-primary btn-lg" [disabled]="!enableButton" (click)="onClickAccountButton()">Account Info</button> </tr>
         </thead>
         <tbody>
-          <tr> <button type="button" class="btn btn-secondary btn-lg" [disabled]="!enableButton"> Buying History </button> </tr>
+          <tr> <button type="button" class="btn btn-secondary btn-lg" [disabled]="!enableButton" (click)="onClickBuyingHistoyButton()"> Buying History </button> </tr>
           <tr> <button type="button" class="btn btn-success btn-lg" [disabled]="!enableButton">Selling History</button></tr>
           <tr> <button type="button" class="btn btn-info btn-lg" [disabled]="!enableButton">Recently Viewed</button> </tr>
         </tbody>
@@ -22,7 +22,7 @@
     <div id="account-tabs-info"class="col-xs-6" *ngIf = "infoShow">
       <table class="table table-bordered">
         <thead>
-          <tr> Example Info </tr>
+          <tr> Example Account Info </tr>
         </thead>
         <tbody>
           <tr> Example Item 1 </tr>
@@ -32,6 +32,21 @@
         </tbody>
       </table>
     </div>
+
+    <div id="buying-history-info"class="col-xs-6" *ngIf = "buyingHistoryShow">
+      <table class="table table-bordered">
+        <thead>
+          <tr> Example Buying History Info </tr>
+        </thead>
+        <tbody>
+          <tr> Example Item 1 </tr>
+          <tr> Example Item 2 </tr>
+          <tr> Example Item 3 </tr>
+          <tr> Example Item 4 </tr>
+        </tbody>
+      </table>
+    </div>
+
   </div>
 
 </div>

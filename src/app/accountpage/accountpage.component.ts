@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AccountpageComponent implements OnInit {
     enableButton = false;
     infoShow = false;
+    buyingHistoryShow = false;
 
   constructor() {
     setTimeout(() => {
@@ -21,5 +22,10 @@ export class AccountpageComponent implements OnInit {
 
   onClickAccountButton () {
     this.infoShow = true;
+    this.buyingHistoryShow = false;
   }
+
+  onClickBuyingHistoyButton () {
+    this.buyingHistoryShow = true;
+    this.infoShow = false;
 }
