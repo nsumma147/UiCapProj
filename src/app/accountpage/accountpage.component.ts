@@ -9,6 +9,8 @@ export class AccountpageComponent implements OnInit {
     enableButton = false;
     infoShow = false;
     buyingHistoryShow = false;
+    sellingHistoryShow = false;
+    recentlyViewedShow = false;
 
   constructor() {
     setTimeout(() => {
@@ -23,9 +25,30 @@ export class AccountpageComponent implements OnInit {
   onClickAccountButton () {
     this.infoShow = true;
     this.buyingHistoryShow = false;
+    this.sellingHistoryShow = false;
+    this.recentlyViewedShow = false;
   }
 
-  onClickBuyingHistoyButton () {
-    this.buyingHistoryShow = true;
+  onClickBuyingHistoryButton () {
     this.infoShow = false;
+    this.buyingHistoryShow = true;
+    this.sellingHistoryShow = false;
+    this.recentlyViewedShow = false;
+}
+
+  onClickSellingHistoryButton () {
+    this.infoShow = false;
+    this.buyingHistoryShow = false;
+    this.sellingHistoryShow = true;
+    this.recentlyViewedShow = false;
+
+  }
+
+  onClickRecentlyViewedButton () {
+    this.infoShow = false;
+    this.buyingHistoryShow = false;
+    this.sellingHistoryShow = false;
+    this.recentlyViewedShow = true;
+  }
+
 }

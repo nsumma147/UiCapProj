@@ -7,9 +7,9 @@
           <tr> <button type="button" class="btn btn-primary btn-lg" [disabled]="!enableButton" (click)="onClickAccountButton()">Account Info</button> </tr>
         </thead>
         <tbody>
-          <tr> <button type="button" class="btn btn-secondary btn-lg" [disabled]="!enableButton" (click)="onClickBuyingHistoyButton()"> Buying History </button> </tr>
-          <tr> <button type="button" class="btn btn-success btn-lg" [disabled]="!enableButton">Selling History</button></tr>
-          <tr> <button type="button" class="btn btn-info btn-lg" [disabled]="!enableButton">Recently Viewed</button> </tr>
+          <tr> <button type="button" class="btn btn-secondary btn-lg" [disabled]="!enableButton" (click)="onClickBuyingHistoryButton()"> Buying History </button> </tr>
+          <tr> <button type="button" class="btn btn-success btn-lg" [disabled]="!enableButton" (click)="onClickSellingHistoryButton()">Selling History</button></tr>
+          <tr> <button type="button" class="btn btn-info btn-lg" [disabled]="!enableButton" (click)="onClickRecentlyViewedButton()">Recently Viewed</button> </tr>
         </tbody>
       </table>
     </div>
@@ -25,10 +25,10 @@
           <tr> Example Account Info </tr>
         </thead>
         <tbody>
-          <tr> Example Item 1 </tr>
-          <tr> Example Item 2 </tr>
-          <tr> Example Item 3 </tr>
-          <tr> Example Item 4 </tr>
+          <tr> First and Last Name </tr>
+          <tr> User Name </tr>
+          <tr> Email </tr>
+          <tr> Other Info </tr>
         </tbody>
       </table>
     </div>
@@ -39,10 +39,38 @@
           <tr> Example Buying History Info </tr>
         </thead>
         <tbody>
-          <tr> Example Item 1 </tr>
-          <tr> Example Item 2 </tr>
-          <tr> Example Item 3 </tr>
-          <tr> Example Item 4 </tr>
+          <tr> Example Item 1 w/ buying price</tr>
+          <tr> Example Item 2 w/ buying price</tr>
+          <tr> Example Item 3 w/ buying price</tr>
+          <tr> Example Item 4 w/ buying price</tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="selling-history-info"class="col-xs-6" *ngIf = "sellingHistoryShow">
+      <table class="table table-bordered">
+        <thead>
+          <tr> Example Selling History Info </tr>
+        </thead>
+        <tbody>
+          <tr> Example Item 1 w/ selling price</tr>
+          <tr> Example Item 2 w/ selling price</tr>
+          <tr> Example Item 3 w/ selling price</tr>
+          <tr> Example Item 4 w/ selling price</tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="recently-viewed-info"class="col-xs-6" *ngIf = "recentlyViewedShow">
+      <table class="table table-bordered">
+        <thead>
+          <tr> Example Recently Viewed Info </tr>
+        </thead>
+        <tbody>
+          <tr> Most recent Item 1</tr>
+          <tr> Most recent Item 2</tr>
+          <tr> Most recent Item 3</tr>
+          <tr> Most recent Item 4</tr>
         </tbody>
       </table>
     </div>
