@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountpageComponent implements OnInit {
     enableButton = false;
+    infoShow = false;
 
   constructor() {
     setTimeout(() => {
@@ -18,4 +19,7 @@ export class AccountpageComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClickAccountButton () {
+    this.infoShow = true;
+  }
 }

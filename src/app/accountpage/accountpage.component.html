@@ -4,7 +4,7 @@
     <div id="account-tabs"class="col-xs-3">
       <table class="table table-bordered">
         <thead>
-          <tr> <button type="button" class="btn btn-primary btn-lg" [disabled]="!enableButton">Account Info</button> </tr>
+          <tr> <button type="button" class="btn btn-primary btn-lg" [disabled]="!enableButton" (click)="onClickAccountButton()">Account Info</button> </tr>
         </thead>
         <tbody>
           <tr> <button type="button" class="btn btn-secondary btn-lg" [disabled]="!enableButton"> Buying History </button> </tr>
@@ -19,7 +19,7 @@
     </div>
 
 
-    <div id="account-tabs-info"class="col-xs-6">
+    <div id="account-tabs-info"class="col-xs-6" *ngIf = "infoShow">
       <table class="table table-bordered">
         <thead>
           <tr> Example Info </tr>
