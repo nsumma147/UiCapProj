@@ -22,9 +22,9 @@ export class AccountpageComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickAccountButton () {
-    this.infoShow = true;
-    this.buyingHistoryShow = false;
+  onClickAccountButton () {               /* functions below reveal and hide items based on on click events*/
+    this.infoShow = true;                 /* NOTE come back to look at simplifying these down to one function */
+    this.buyingHistoryShow = false;       /* because they essentially do the same thing*/
     this.sellingHistoryShow = false;
     this.recentlyViewedShow = false;
   }

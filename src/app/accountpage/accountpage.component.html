@@ -5,7 +5,7 @@
       <table class="table table-bordered">
         <thead>
           <tr> <button type="button" class="btn btn-primary btn-lg" [disabled]="!enableButton" (click)="onClickAccountButton()">Account Info</button> </tr>
-        </thead>
+        </thead>  <!-- buttons below are disabled for first 2 seconds and have on click events-->
         <tbody>
           <tr> <button type="button" class="btn btn-secondary btn-lg" [disabled]="!enableButton" (click)="onClickBuyingHistoryButton()"> Buying History </button> </tr>
           <tr> <button type="button" class="btn btn-success btn-lg" [disabled]="!enableButton" (click)="onClickSellingHistoryButton()">Selling History</button></tr>
