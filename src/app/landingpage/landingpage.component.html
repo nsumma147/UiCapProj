@@ -7,8 +7,12 @@
     <input id ="search-input"
            type='text'
            class="form-control"
+           (focus) ="onSearchFocus()" <!-- will trigger when user focuses the search input field -->
            [(ngModel)]="searchItem">
     <button type="submit" class= "btn btn-lg"[disabled]="!searchButton"><a [routerLink]="['/productpage']"> Search </a></button>
-    <p *ngIf = "searchInput"> You are searching for: {{ searchItem }} </p> <!-- interpolating what the user is typing through typescript page-->
+    <p *ngIf = "searchInput; else noInput"> What would you like to search for? </p> <!-- interpolating what the user is typing through typescript page-->
+    <ng-template #noInput>   <!-- second part of the ngIf else directive -->
+      <p>You are searching for: {{ searchItem }}</p>
+    </ng-template>
   </div>
 </section>
